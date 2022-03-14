@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import AOS from 'aos';
+
+// routes
+import Routes from './routes/Routes';
+
+// helpers
+import { configureFakeBackend } from './helpers';
+
+// Themes
+//  For Default import Theme.scss
+import './assets/scss/theme.scss';
+
+const App = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
+    configureFakeBackend();
+    return <Routes />;
+};
 
 export default App;

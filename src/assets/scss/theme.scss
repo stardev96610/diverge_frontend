@@ -1,0 +1,19 @@
+/*
+Template Name: Prompt Kit
+Author: CoderThemes
+Version: 1.0.0
+Website: https://coderthemes.com/
+Contact: support@coderthemes.com
+File: Main Css File
+*/
+
+// FONTS
+@import "custom/fonts";
+
+//CORE FILES
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// general
+@import "custom/general";
