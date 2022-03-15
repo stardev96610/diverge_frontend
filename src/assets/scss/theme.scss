@@ -9,11 +9,13 @@ File: Main Css File
 
 // FONTS
 @import "custom/fonts";
-
 //CORE FILES
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
+@import "skins/default/variables";
+@import "skins/default/custom-variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
-
 // general
 @import "custom/general";
+@import "components/navbar";
+@import "components/nav";
