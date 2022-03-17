@@ -1,30 +1,72 @@
 header {
-    @media (max-width: 992px) {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 3;
-    }
+    // @media (max-width: 992px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    // }
 }
 
 .carousel_section {
-    @media (max-width: 992px) {
-        margin-top: 89px;
+    margin-top: 4.6em;
+    @media (max-width: 991.98px) {
+        margin-top: 4.9em;
+    }
+    @media (max-width: 768px) {
+        margin-top: 3.9em;
     }
     .carousel {
+        .carousel-indicators [data-bs-target] {
+            width: 10px !important;
+            height: 10px !important;
+            border: 1px solid transparent !important;
+            border-radius: 10px;
+        }
+        // .carousel-control-prev-icon,
+        // .carousel-control-next-icon {
+        //     display: none;
+        // }
         .carousel-caption {
             top: 20%;
             bottom: auto;
+            right: 5%;
             left: 50%;
             text-align: left;
+            @media (max-width: 1500px) {
+                font-size: 0.9em;
+                top: 3em;
+            }
+            @media (max-width: 1270px) {
+                font-size: 0.8em;
+                top: 1.5em;
+            }
+            @media (max-width: 1050px) {
+                font-size: 0.7em;
+                top: 1.5em;
+            }
+            @media (max-width: 985px) {
+                font-size: 0.6em;
+                top: 1.5em;
+            }
+            @media (max-width: 835px) {
+                font-size: 0.5em;
+                top: 0.5em;
+            }
+            @media (max-width: 640px) {
+                font-size: 0.4em;
+                top: 0em;
+            }
             .text-white {
                 // font-family: 'Poppins';
                 font-weight: bold;
-                font-size: 55px;
+                font-size: 4.5em;
             }
             p {
                 margin-top: 1.5em;
-                font-size: 23px;
+                font-size: 2.5em;
+                @media (max-width: 992px) {
+                    margin-top: 1.3em;
+                }
             }
         }
     }

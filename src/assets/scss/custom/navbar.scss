@@ -3,14 +3,18 @@
 #sticky {
     @media (max-width: 991.98px) {
         position: fixed;
+        padding: 0;
     }
     .container {
         max-width: 100vw;
     }
     .logo {
         img {
-            width: 232px;
-            height: 63px;
+            width: 14.5em;
+            height: 3.93em;
+            @media (max-width: 768px) {
+                font-size: 0.8em;
+            }
         }
     }
     .navbar-nav {
