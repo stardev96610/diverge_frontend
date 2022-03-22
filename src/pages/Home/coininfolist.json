@@ -1,0 +1,83 @@
+[{
+        "imageUrl": "kp3r",
+        "coinName": "KP3R",
+        "currentPrice": "$361.42",
+        "changePrice": "$5.95",
+        "changePercent": "1.68",
+        "priceUp": true
+    },
+    {
+        "coinName": "USDC",
+        "currentPrice": "$0.999",
+        "changePrice": "$0.0005",
+        "changePercent": "0.06",
+        "priceUp": false
+    },
+    {
+        "imageUrl": "XRP",
+        "coinName": "XRP",
+        "currentPrice": "$0.82",
+        "changePrice": "$0.02",
+        "changePercent": "3.38",
+        "priceUp": true
+    },
+    {
+        "coinName": "LUNA",
+        "currentPrice": "$91.45",
+        "changePrice": "$0.08",
+        "changePercent": "0.09",
+        "priceUp": true
+    },
+    {
+        "imageUrl": "ada",
+        "coinName": "ADA",
+        "currentPrice": "$0.91",
+        "changePrice": "$0.05",
+        "changePercent": "6.12",
+        "priceUp": true
+    },
+    {
+        "imageUrl": "SOL",
+        "coinName": "SOL",
+        "currentPrice": "$88.88",
+        "changePrice": "$4.62",
+        "changePercent": "4.95",
+        "priceUp": true
+    },
+    {
+        "imageUrl": "UST",
+        "coinName": "UST",
+        "currentPrice": "$1.00",
+        "changePrice": "$0.0003",
+        "changePercent": "0.03",
+        "priceUp": false
+    },
+    {
+        "coinName": "SHIB",
+        "currentPrice": "$0.00002",
+        "changePrice": "$0.000001",
+        "changePercent": "5.84",
+        "priceUp": true
+    },
+    {
+        "coinName": "MATIC",
+        "currentPrice": "$1.47",
+        "changePrice": "$0.05",
+        "changePercent": "3.5",
+        "priceUp": false
+    },
+    {
+        "coinName": "WBTC",
+        "currentPrice": "$42065.86",
+        "changePrice": "$5.783.42",
+        "changePercent": "1.83",
+        "priceUp": false
+    },
+    {
+        "coinName": "DAI",
+        "currentPrice": "$0.99",
+        "changePrice": "$0.0002",
+        "changePercent": "0.03",
+        "priceUp": false
+    }
+]

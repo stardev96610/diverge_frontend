@@ -1,6 +1,5 @@
-// @import "../skins/default/variables";
-// @import "../skins/default/custom-variables";
 #sticky {
+    height: 60px;
     @media (max-width: 991.98px) {
         position: fixed;
         padding: 0;
@@ -10,10 +9,11 @@
     }
     .logo {
         img {
-            width: 14.5em;
-            height: 3.93em;
-            @media (max-width: 768px) {
-                font-size: 0.8em;
+            width: 200px;
+            height: 60px;
+            @media (max-width: 992px) {
+                width: 20vw;
+                height: 6vw;
             }
         }
     }
@@ -26,12 +26,19 @@
                 margin-left: 8px;
                 margin-right: 8px;
             }
-        }
-        .nav-link.active {
-            line-height: 35px;
-            border-radius: 10px;
-            background-color: #343232;
-            color: white !important;
+            .nav-link {
+                margin-top: 3px;
+                line-height: 35px;
+                border-radius: 10px;
+                &:hover {
+                    background-color: #807272;
+                }
+                &.active {
+                    background-color: #343232;
+                    color: white !important;
+                    @media (min-width: 992px) {}
+                }
+            }
         }
     }
     .login_btn {
@@ -42,6 +49,9 @@
         border: 1px solid #BFBFC5;
         border-radius: 60px;
         padding: 0;
+        &:hover {
+            background-color: #3b2886;
+        }
     }
     @media (max-width: 992px) {
         .navbar-toggler.collapsed {

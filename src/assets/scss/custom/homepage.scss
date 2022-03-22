@@ -1,3 +1,7 @@
+#root {
+    overflow-x: hidden;
+}
+
 header {
     // @media (max-width: 992px) {
     position: fixed;
@@ -8,13 +12,7 @@ header {
 }
 
 .carousel_section {
-    margin-top: 4.6em;
-    @media (max-width: 991.98px) {
-        margin-top: 4.9em;
-    }
-    @media (max-width: 768px) {
-        margin-top: 3.9em;
-    }
+    margin-top: 60px;
     .carousel {
         .carousel-indicators [data-bs-target] {
             width: 10px !important;
@@ -27,47 +25,256 @@ header {
         //     display: none;
         // }
         .carousel-caption {
-            top: 20%;
+            top: 5vw;
             bottom: auto;
             right: 5%;
             left: 50%;
             text-align: left;
-            @media (max-width: 1500px) {
-                font-size: 0.9em;
-                top: 3em;
-            }
-            @media (max-width: 1270px) {
-                font-size: 0.8em;
-                top: 1.5em;
-            }
-            @media (max-width: 1050px) {
-                font-size: 0.7em;
-                top: 1.5em;
-            }
-            @media (max-width: 985px) {
-                font-size: 0.6em;
-                top: 1.5em;
-            }
-            @media (max-width: 835px) {
-                font-size: 0.5em;
-                top: 0.5em;
-            }
-            @media (max-width: 640px) {
-                font-size: 0.4em;
-                top: 0em;
-            }
             .text-white {
                 // font-family: 'Poppins';
                 font-weight: bold;
-                font-size: 4.5em;
+                font-size: 4.5vw;
             }
             p {
                 margin-top: 1.5em;
-                font-size: 2.5em;
+                font-size: 2.3vw;
                 @media (max-width: 992px) {
                     margin-top: 1.3em;
                 }
             }
         }
+    }
+}
+
+//coin_price_section
+.coin_price_section {
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    flex: 1 1 0%;
+    white-space: nowrap;
+    will-change: transform;
+    position: relative;
+    background: #F9F9F9;
+    &.run_animation {
+        animation: 25s linear 0s infinite normal none running dheHEH;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+}
+
+@-webkit-keyframes dheHEH {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: -50%;
+    }
+}
+
+@keyframes dheHEH {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: -50%;
+    }
+}
+
+//Bank Section
+.bank_link {
+    padding: 55px 0;
+    text-align: center;
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    background: url('../../images/bank_link_back.png') no-repeat;
+    background-position: right top;
+    .card {
+        width: 370px;
+        height: 398px;
+        margin: 0 20px;
+        padding: 50px 20px;
+        &:hover {
+            // border: 1px solid rgba(0, 0, 0, 0.09);
+            border-radius: 30px;
+            box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.09);
+            .arrow_right {
+                display: block;
+            }
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            line-height: 33px;
+        }
+        .card-text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            margin-bottom: 50px;
+        }
+        .card-img-top {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto;
+        }
+        .arrow_right {
+            width: 31px;
+            height: 25px;
+            margin: 0 auto;
+            display: none;
+        }
+    }
+}
+
+.trade_section {
+    padding: 55px 25px;
+    background-color: black;
+    color: white;
+    .row {
+        gap: 25px;
+    }
+    .title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .card {
+        width: 279px;
+        background-color: black;
+        .card-img-top {
+            width: 279px;
+            height: 216px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            margin-top: 10px;
+            margin-bottom: 5px
+        }
+        .card-text {
+            font-size: 15px;
+            color: #95959A;
+        }
+    }
+    button.trade_now {
+        color: white;
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        font-size: 22px;
+        font-weight: 500;
+        border: 1px solid #E5E5E5;
+        padding: 10px 40px;
+        border-radius: 30px;
+    }
+}
+
+.nft_gateway_section {
+    padding: 55px 25px;
+    // background-color: black;
+    color: black;
+    text-align: center;
+    .row {
+        gap: 25px;
+    }
+    .title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .text {
+        padding: 0 15%;
+    }
+    .card {
+        width: 284px;
+        padding: 0;
+    }
+    button.learn_more {
+        color: black;
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        font-size: 22px;
+        font-weight: 500;
+        border: 1px solid black;
+        padding: 10px 40px;
+        border-radius: 30px;
+    }
+}
+
+.tools_biginner_section {
+    padding: 55px 50px;
+    @media (max-width: 992px) {
+        padding: 55px 1em;
+    }
+    // background-color: black;
+    color: white;
+    span {
+        display: block;
+    }
+    .title {
+        font-size: 46px;
+        line-height: 58px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .text {
+        font-size: 23px;
+        line-height: 36px;
+        color: #95959A;
+    }
+    button.learn_more {
+        color: #E5E5E5;
+        margin-top: 60px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        border: 1px solid #E5E5E5;
+        padding: 10px 40px;
+        border-radius: 30px;
+    }
+    .tools_img {
+        @media (max-width: 992px) {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.simple_secure_section {
+    padding: 55px 50px;
+    color: black;
+    text-align: center;
+    @media (max-width: 992px) {
+        padding: 55px 1em;
+    }
+    .title {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 45px;
+    }
+    .text {
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: 30px;
+    }
+    button.get_started {
+        color: black;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 22px;
+        font-weight: 500;
+        border: 1px solid black;
+        padding: 10px 40px;
+        border-radius: 30px;
     }
 }

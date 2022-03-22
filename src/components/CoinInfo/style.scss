@@ -1,0 +1,22 @@
+.coin_info {
+    font-weight: bold;
+    cursor: pointer;
+    &>img {
+        margin-right: 5px;
+    }
+    &>span {
+        margin: 0 5px;
+    }
+    .coin_price_change {
+        color: rgb(231, 85, 48);
+        &.price_up {
+            color: rgb(77, 228, 228);
+        }
+    }
+    .coin_price_percent {
+        color: rgb(231, 85, 48);
+        &.price_up {
+            color: rgb(77, 228, 228);
+        }
+    }
+}
