@@ -147,10 +147,10 @@ header {
     .card {
         width: 279px;
         background-color: black;
-        .card-img-top {
-            width: 279px;
-            height: 216px;
-        }
+        // .card-img-top {
+        //     width: 279px;
+        //     height: 216px;
+        // }
         .card-title {
             font-size: 20px;
             font-weight: 600;
@@ -176,7 +176,7 @@ header {
     }
 }
 
-.nft_gateway_section {
+.nft_marketplace_section {
     padding: 55px 25px;
     // background-color: black;
     color: black;

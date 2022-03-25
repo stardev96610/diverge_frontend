@@ -83,9 +83,9 @@ const Home = () => {
                 </Carousel>
             </section>
             {/* News Section */}
-            <section className="news_section section bg-black text-center px-3 px-sm-5 py-2">
+            {/* <section className="news_section section bg-black text-center px-3 px-sm-5 py-2">
                 <img src={NewsImages} alt="" className="w-100" />
-            </section>
+            </section> */}
             {/* Coins with Price Change */}
             <section className="coin_price_section section run_animation d-flex p-2 justify-content-between">
                 {coinInfoList.map((item, i) => {
@@ -125,33 +125,33 @@ const Home = () => {
             {/* Trade Section /> */}
             <section className="trade_section section">
                 <span className="d-block title mb-5">Join some of the world's biggest names who trust Diverge</span>
-                <div className="row justify-content-center align-items-center">
+                <div className="row justify-content-center">
                     <Card className="">
                         <Card.Img variant="top" src={TradeImg1} alt="Trade Img" />
                         <Card.Title>Trevor Lawrence</Card.Title>
                         <Card.Text>
-                            The NFL's number one draft pick and one of football's most exciting
+                            "The NFL's number one draft pick and one of football's most exciting"
                         </Card.Text>
                     </Card>
                     <Card className="">
                         <Card.Img variant="top" src={TradeImg2} alt="Trade Img" />
                         <Card.Title>Golden State Warriors</Card.Title>
                         <Card.Text>
-                            FTX became the Warriors’ official cryptocurrency platform
+                            "Diverge became the Warriors' official cryptocurrency platform"
                         </Card.Text>
                     </Card>
                     <Card className="">
                         <Card.Img variant="top" src={TradeImg3} alt="Trade Img" />
                         <Card.Title>Udonis Haslem</Card.Title>
                         <Card.Text>
-                            3x NBA Champion. Captain of the Miami HEAT. Udonis Haslem
+                            "3x NBA Champion. Captain of the Miami HEAT. Udonis Haslem"
                         </Card.Text>
                     </Card>
                     <Card className="">
                         <Card.Img variant="top" src={TradeImg4} alt="Trad Img" />
                         <Card.Title>TSM Diverge</Card.Title>
                         <Card.Text>
-                            In June of 2021, FTX partnered with TSM, the most dominant esports
+                            "In June of 2021, Diverge partnered with TSM, the most dominant esports"
                         </Card.Text>
                     </Card>
                 </div>
@@ -159,10 +159,10 @@ const Home = () => {
                     Trade Now
                 </Button>
             </section>
-            {/* NFT Gateway */}
-            <section className="nft_gateway_section section">
-                <span className="d-block title mb-5">Buy and sell NFTs on Nifty Gateway</span>
-                <span className="d-block text mb-5">A non-fungible token (NFT) is digital art on the blockchain—the latest trend in crypto. Nifty Gateway is owned by Diverge, so you can expect the same industry-leading crypto security for your NFTs.</span>
+            {/* NFT Marketplace */}
+            <section className="nft_marketplace_section section">
+                <span className="d-block title mb-5">Buy and sell NFTs on Nif Marketplace</span>
+                <span className="d-block text mb-5">A non-fungible token (NFT) is digital art on the blockchain—the latest trend in crypto. Diverge has own NFT Marketplace, so you can expect the same industry-leading crypto security for your NFTs.</span>
                 <div className="row justify-content-center align-items-center">
                     <Card className="">
                         <Card.Img variant="top" src={NFTTradeImg1} alt="Card Img" />
